@@ -3,14 +3,18 @@ import numpy as np
 from matplotlib import pyplot as plt
 import matplotlib
 
+# make empty grid
 grid = pyart.testing.make_empty_grid((1, 1041, 1041), ((0, 18000.0),(-900000, 1500000), (-2300000, 2300000)))
 grid.axes['lat']['data'][0]=35
 grid.axes['lon']['data'][0]=-98.5
 
+# put data into a single slice
 data = np.ma.masked_all((1, 1041, 1041))
 data[:,385:395,:]=60
-
 grid.fields["reflectivity"]={'data':data}
+
+######################
+# copy from scott
 
 display = pyart.graph.GridMapDisplay(grid)
 
@@ -39,4 +43,7 @@ display.plot_crosshairs(lon=lon, lat=lat)
 cbax = fig.add_axes(colorbar_panel_axes)
 display.plot_colorbar(cax=cbax)
 
+######################
+
+# save
 plt.savefig('y_slice.png', dpi = 400)
