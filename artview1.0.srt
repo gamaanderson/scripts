@@ -1,0 +1,191 @@
+1
+00:00:08,400 --> 00:00:10,600
+There are several ways of using Artview.
+
+2
+00:00:13,000 --> 00:00:17,300
+By just typing 'artview' you start the default.
+
+3
+00:00:22,000 --> 00:00:25,000
+See the options with -h.
+
+4
+00:00:25,100 --> 00:00:29,100
+For instance, -F open a file directly.
+
+5
+00:00:35,700 --> 00:00:38,200
+Use arrow keys to move between files:
+
+6
+00:00:38,300 --> 00:00:42,200
+Right open the next file in the folder,
+
+7
+00:00:42,300 --> 00:00:44,300
+Left the previous.
+
+8
+00:00:45,400 --> 00:00:48,400
+ARTview use Py-ART to open files.
+
+9
+00:00:48,500 --> 00:00:50,700
+It opens PPI files,
+
+10
+00:00:50,800 --> 00:00:56,000
+RHI files,
+
+11
+00:00:56,100 --> 00:01:00,100
+and Airborne files.
+
+12
+00:01:06,200 --> 00:01:10,200
+You may also open with Py-ART,
+
+13
+00:01:10,300 --> 00:01:18,200
+and use ARTview in the Python terminal.
+
+14
+00:01:18,300 --> 00:01:27,200
+Use 'artview.view.view' for that.
+
+15
+00:01:30,300 --> 00:01:34,300
+Use arrow keys to changes sweeps:
+
+16
+00:01:34,400 --> 00:01:37,300
+Down for previous sweep,
+
+17
+00:01:37,400 --> 00:01:39,300
+Up for the next.
+
+18
+00:01:40,400 --> 00:01:46,400
+Also use drop-down menus to change
+sweep and field,
+
+19
+00:01:46,500 --> 00:01:53,400
+or open radio menus.
+
+20
+00:01:58,500 --> 00:02:02,500
+You may change the colorbar limits,
+
+21
+00:02:02,600 --> 00:02:06,500
+and the axes limits.
+
+22
+00:02:18,600 --> 00:02:24,600
+Change title,
+
+23
+00:02:24,700 --> 00:02:27,600
+the units,
+
+24
+00:02:29,700 --> 00:02:35,600
+and the colormap
+
+25
+00:02:35,700 --> 00:02:39,700
+Select the zoom tool,
+
+26
+00:02:39,800 --> 00:02:42,700
+Zoom in and out with the mouse wheel,
+
+27
+00:02:42,800 --> 00:02:45,700
+pan with the left button.
+
+28
+00:02:45,800 --> 00:02:49,700
+Use the 'Click for Value' tool to acess the data.
+
+29
+00:02:51,800 --> 00:02:59,900
+Save the plot to a image file.
+
+30
+00:03:10,000 --> 00:03:12,000
+Artview is really versatil,
+
+31
+00:03:13,100 --> 00:03:17,100
+you may open multiple displays
+to compare your data
+
+32
+00:03:24,200 --> 00:03:30,200
+You may also link displays:
+
+33
+00:03:38,300 --> 00:03:44,300
+the fields are unlinked:
+ the displays show diferent fields
+
+34
+00:03:44,400 --> 00:03:50,400
+the fields are linked:
+the displays share the same field,
+
+35
+00:03:50,500 --> 00:03:58,400
+changing one, changes the other.
+
+36
+00:04:00,500 --> 00:04:06,500
+ARTview has plug-ins for some
+ of the Py-ART functions
+
+37
+00:04:06,600 --> 00:04:12,500
+For instance, Mapper uses 'pyart.map.grid_from_radars'
+
+38
+00:04:18,600 --> 00:04:24,600
+ARTview also work with grided data,
+
+39
+00:04:30,700 --> 00:04:38,700
+and uses 'pyart.io.write_grid' to save 
+the grid to a file
+
+40
+00:04:48,800 --> 00:04:52,800
+ARTview has also original features,
+
+41
+00:04:52,900 --> 00:04:56,800
+like selecting a subset of the data.
+
+42
+00:04:56,900 --> 00:05:01,800
+View the data in a table,
+
+43
+00:05:02,900 --> 00:05:08,900
+save in a file,
+
+44
+00:05:04,900 --> 00:05:10,900
+and get statatic informations.
+
+45
+00:05:22,000 --> 00:05:25,000
+You may also write your own
+program in ARTview.
+
+46
+00:05:25,100 --> 00:05:30,100
+For instance: just one display, no menu.
+
